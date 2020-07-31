@@ -24,12 +24,12 @@ async def promote(promt):
         admin = chats.admin_rights
         creator = chats.creator
         new_rights = ChatAdminRights(
-            add_admins=True,
+            add_admins=False,
             invite_users=True,
-            change_info=True,
-            ban_users=True,
-            delete_messages=True,
-            pin_messages=True
+            change_info=False,
+            ban_users=False,
+            delete_messages=False,
+            pin_messages=False
         )
 
         # Self explanatory
